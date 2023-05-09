@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "803566370195",
+    "project_id": "bimbel-raja-hans",
+    "storage_bucket": "bimbel-raja-hans.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803566370195:android:51c542be49bfcfbae93c66",
+        "android_client_info": {
+          "package_name": "com.example.bimbel_raja_hans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803566370195-s8ddqobl3e7e5r9oc965udjp16q1ihsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEW_6Aiz54IaLLvQeP9wowT4T7qWMURGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803566370195-s8ddqobl3e7e5r9oc965udjp16q1ihsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

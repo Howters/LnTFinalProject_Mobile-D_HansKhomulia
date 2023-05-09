@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondFragment"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Area Calculator"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Mari berlatih mencari luas bangun datar!"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navy_blue"
+            app:tabTextColor="@color/white"
+            android:layout_marginTop="20dp"></com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"></androidx.viewpager2.widget.ViewPager2>
+    </LinearLayout>
+</FrameLayout>

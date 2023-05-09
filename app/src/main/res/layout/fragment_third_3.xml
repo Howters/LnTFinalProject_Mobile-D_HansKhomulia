@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThirdFragment_3"
+    android:background="@color/black">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cylinder Calculator"
+                    android:textSize="35dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumus volume ruang tabung"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3,14 x (panjang jari-jari) x (panjang jari-jari) x (tinggi)"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Panjang jari-jari:"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/jariTabung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/baby_blue"
+                    android:inputType="number"
+                    android:hint="Contoh: 3"
+                    android:alpha="0.5"
+                    android:textStyle="normal"
+                    android:layout_marginRight="150dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tinggi:"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/tinggiTabung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/baby_blue"
+                    android:inputType="number"
+                    android:hint="Contoh: 13"
+                    android:alpha="0.5"
+                    android:textStyle="normal"
+                    android:layout_marginRight="150dp"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/hitungTabung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="185dp"
+                android:text="Hitung"
+                />
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                app:dividerColor="@color/navy_blue"
+                android:layout_marginTop="300dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hasil:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="320dp"
+                android:layout_marginLeft="28dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hasilTabung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="320dp"
+                android:text="0"
+                android:textStyle="bold"/>
+        </FrameLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_weight="1"
+        android:background="@color/navy_blue"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="225dp"
+            android:text="Selamat datang!"
+            android:textColor="@color/baby_blue"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Username"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"></androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navy_blue"
+        app:tabTextColor="@color/white"></com.google.android.material.tabs.TabLayout>
+</LinearLayout>

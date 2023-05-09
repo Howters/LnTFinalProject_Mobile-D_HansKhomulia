@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondFragment_2"
+    android:background="@color/black">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Triangle Calculator"
+                    android:textSize="35dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumus luas segitiga"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="((panjang alas) x (tinggi)) ÷ 2"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Panjang alas:"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/alasSegitiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/baby_blue"
+                    android:inputType="number"
+                    android:hint="Contoh: 13"
+                    android:layout_marginRight="150dp"
+                    android:alpha="0.5"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tinggi:"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/tinggiSegitiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/baby_blue"
+                    android:inputType="number"
+                    android:hint="Contoh: 9"
+                    android:layout_marginRight="150dp"
+                    android:alpha="0.5"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/hitungSegitiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="170dp"
+                android:text="Hitung"
+                />
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="290dp"
+                app:dividerColor="@color/navy_blue" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hasil:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="305dp"
+                android:layout_marginLeft="28dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hasilSegitiga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginTop="305dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </FrameLayout>
+    </ScrollView>
+
+
+</FrameLayout>
