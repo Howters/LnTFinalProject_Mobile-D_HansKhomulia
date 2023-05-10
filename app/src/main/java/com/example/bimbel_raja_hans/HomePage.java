@@ -37,7 +37,7 @@ public class HomePage extends AppCompatActivity {
         setViewPager2(viewPager2);
         new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> tab.setText(pagerAdaptor.getFragmentTitle(position))).attach();
         mAuth = FirebaseAuth.getInstance();
-        firebaseDatabase = FirebaseDatabase.getInstance("https://finalprojectwillax-default-rtdb.asia-southeast1.firebasedatabase.app/");
+        firebaseDatabase = FirebaseDatabase.getInstance("https://bimbel-raja-hans-default-rtdb.asia-southeast1.firebasedatabase.app/");
         FirebaseUser firebaseUser = mAuth.getCurrentUser();
         userRef = firebaseDatabase.getReference().child("users").child(firebaseUser.getUid());
 

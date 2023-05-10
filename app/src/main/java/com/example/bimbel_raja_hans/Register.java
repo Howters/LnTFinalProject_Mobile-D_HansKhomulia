@@ -39,7 +39,7 @@ public class Register extends AppCompatActivity {
         regisBtn = findViewById(R.id.btn_regis);
         progressBar = findViewById(R.id.progressbar);
         mAuth = FirebaseAuth.getInstance();
-        fDatabase = FirebaseDatabase.getInstance("https://finalprojectwillax-default-rtdb.asia-southeast1.firebasedatabase.app/");
+        fDatabase = FirebaseDatabase.getInstance("https://bimbel-raja-hans-default-rtdb.asia-southeast1.firebasedatabase.app/");
 
         loginLink.setOnClickListener(view -> {
             Intent loginIntent = new Intent(Register.this, Login.class);
